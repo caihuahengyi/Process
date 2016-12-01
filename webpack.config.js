@@ -28,8 +28,14 @@ module.exports={
 				exclude: /node_modules/
 			},
 			{
+				test:/\.css$/,
+				include:/node_modules/,
+				loader:extrtartTextwebpackPlugin.extract("style-loader", "css-loader")
+			},
+			{
 				test:/\.css/,
-				loader:extrtartTextwebpackPlugin.extract("style-loader","css-loader")
+				include:SRC_PATH,
+				loader:extrtartTextwebpackPlugin.extract("style-loader", "css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]")
 			},
 			{
 				test:/\.(woff|woff2|svg|eot)(\d+\.\d+\.\d+)?$/,
@@ -58,7 +64,7 @@ module.exports={
 		 },
 		plugins:[
 			new htmlWebpackPlugin({
-			 title: 'Redux-Example',
+			 title: 'Process-Example',
       template: path.join(TEM_PATH, 'index.html'),
       filename: 'index.html',
       inject: 'body',
@@ -70,7 +76,16 @@ module.exports={
 			new openBrowserWebpackPlugin({
 				url:'http://localhost:9066'
 			}),
-			new extrtartTextwebpackPlugin("bundle.css?[hash:8]")
+			new extrtartTextwebpackPlugin("bundle.css?[hash:8]", {
+          allChunks: true,
+          disable: false
+      })
+	/*		new webpack.optimize.UglifyJsPlugin({    //压缩代码
+       compress: {
+           warnings: false
+       },
+       except: ['$super', '$', 'exports', 'require']    //排除关键字
+    })*/
 
 		]
   

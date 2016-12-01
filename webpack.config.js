@@ -13,7 +13,7 @@ const	TEM_PATH = path.join(ROOT_PATH,'templates');
 module.exports={
 	entry:{
 		bundle:path.join(SRC_PATH,'/index.js'),
-		vendor:['react']//提取公共的react代码
+		vendor:['react','react-dom']//提取公共的react代码
 	},
 	output:{
 		path:DIST_PATH,
@@ -46,8 +46,10 @@ module.exports={
       + (options.longTermCaching ? '?[chunkhash:8]' : ''),*/
    // sourceMapFilename: 'debugging/[file].map',
    devServer:{
+   	 historyApiFallback: true,//不跳转
    	 stats:{colors:true},
-   	 port:9066
+   	 port:9066,
+   	 inline:true
    },
      devtool:'cheap-module-source-map',
    resolve:{
@@ -56,9 +58,14 @@ module.exports={
 		 },
 		plugins:[
 			new htmlWebpackPlugin({
-				title:'Process',
-				templates:TEM_PATH
+			 title: 'Redux-Example',
+      template: path.join(TEM_PATH, 'index.html'),
+      filename: 'index.html',
+      inject: 'body',
+      //favicon: 'favicon.ico'
 			}),
+		/*	e | 'head' | 'body' | false ,注入所有的资源到特定的 template 或者 templateContent 中，如果设置为 true 
+或者 body，所有的 javascript 资源将被放置到 body 元素的底部，'head' 将放置到 head 元素中。*/
 			new  webpack.optimize.CommonsChunkPlugin('vendor','vendor.js?[hash]'),
 			new openBrowserWebpackPlugin({
 				url:'http://localhost:9066'

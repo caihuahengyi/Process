@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": ">1 下载项目，一般公司会有自己的github或者svn",
   "main": "index.js",
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "build": "webpack  --precess --color"
+  },
   "dependencies": {
-    "init": "^0.1.2",
-    "dev": "webpack-dev-server --progress --colors",
-    "build": "webpack  --progress --colors"
+    "init": "^0.1.2"
   },
   "devDependencies": {
     "antd": "^2.5.0",
@@ -38,10 +41,15 @@
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server"
-  }
-  
-  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangfaliang/Process.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangfaliang/Process/issues"
+  },
+  "homepage": "https://github.com/zhangfaliang/Process#readme"
 }

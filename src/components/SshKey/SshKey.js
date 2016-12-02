@@ -17,13 +17,15 @@ export default class SshKey extends Component{
 				<Row>
 					<Col  offset={2}  offset={2} lg={18} md={18} sm={18} xs={18}>
 						<h3>一、公司代码管理方式</h3>
-						<p>1、公司代码管理方式一般是私有git或者svg，下面讲一下git管理的初始配置sshkey</p>
+						<p>1、公司代码管理方式一般是私有git或者svg，下面讲一下git管理的初始配置sshkey<br/>
+						2、给你有权限的git账号（下载项目）、wiki账号（看接口文档）、jira账号（bug列表）
+						</p>
 						
 					</Col>
 				</Row>
 				<Row>
 					<Col   offset={2} lg={18} md={18} sm={18} xs={18}>
-						<h3>二、检查SSH keys是否存在</h3>
+						<h3>二、配置SSH ,检查SSH keys是否存在</h3>
 						<p>输入下面的命令，如果有文件id_rsa.pub 或 id_dsa.pub，则直接进入步骤3将SSH key添加到GitHub中，否则进入第二步生成SSH key</p>
 						<span>
 							ls -al ~/.ssh <br/>

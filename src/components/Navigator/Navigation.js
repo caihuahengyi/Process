@@ -26,9 +26,7 @@ export default class Navigation extends Component{
           <Menu onClick={this.handleClick}
           selectedKeys={[this.state.current]}
           mode="horizontal">
-          <Menu.Item key="position">
-            工作流程
-          </Menu.Item>
+         
           <SubMenu title={<span><Icon type="setting" /> 项目下载</span>}>
 	            <Menu.Item key="setting:1">
                 <Link to='/'>git配置</Link>
@@ -37,9 +35,16 @@ export default class Navigation extends Component{
                 <Link to='sourcetree'>sourceTree配置</Link>
               </Menu.Item>
         	</SubMenu>
+          <Menu.Item key="position">
+            <Link to='process'>工作流程</Link>
+          </Menu.Item>
         	<SubMenu title={<span><Icon type="setting" /> 项目管理</span>}>
-	            <Menu.Item key="setting:1">wiki是什么</Menu.Item>
-	            <Menu.Item key="setting:2">jira是什么</Menu.Item>
+	            <Menu.Item key="setting:4">
+               <Link to='wiki'>WIKI接口管理</Link>
+              </Menu.Item>
+	            <Menu.Item key="setting:3">
+               <Link to='jira'> JIRA bug管理</Link>
+              </Menu.Item>
         	</SubMenu>
           <Menu.Item key="option">
             问题定位

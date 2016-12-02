@@ -11,12 +11,13 @@ export default class SourceTree extends Component{
 			<Row className={styles['mg20']}>
 				<Row>
 					<Col  className={styles['tit_d']}>
-						<h2>SourceTree和git命令的对比</h2>		
+						<h2>SourceTree傻瓜式提交</h2>		
 					</Col>
 				</Row>
 				<Row>
 					<Col  offset={2}  offset={2} lg={18} md={18} sm={18} xs={18}>
-						<h3>一、SourceTree下载项目</h3>
+						<h3>一、SourceTree下载项目（https://www.sourcetreeapp.com/）</h3>
+
 						<img src={require('../img/sourcetree/sourcetree.png')}></img>
 						
 					</Col>

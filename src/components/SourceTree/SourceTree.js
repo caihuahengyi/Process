@@ -1,8 +1,8 @@
 import React,{Component, PropTypes } from 'react'
 import { Row, Col } from 'antd'
 import { Router, Route, IndexRoute, browserHistory } from 'react-router'
-import * as styles from './SshKey.css'
-export default class SshKey extends Component{
+import * as styles from '../SshKey/SshKey.css'
+export default class SourceTree extends Component{
 	constructor(props){
 		super(props)
 	}
@@ -11,13 +11,16 @@ export default class SshKey extends Component{
 			<Row className={styles['mg20']}>
 				<Row>
 					<Col  className={styles['tit_d']}>
-						<h2>代码管理方式</h2>		
+						<h2>SourceTree和git命令的对比</h2>		
 					</Col>
 				</Row>
 				<Row>
 					<Col  offset={2}  offset={2} lg={18} md={18} sm={18} xs={18}>
-						<h3>一、公司代码管理方式</h3>
-						<p>1、公司代码管理方式一般是私有git或者svg，下面讲一下git管理的初始配置sshkey</p>
+						<h3>一、SourceTree下载项目</h3>
+						<p>1、git命令虽然好，但是操作效率不如傻瓜式（sourceTree方便）
+								<br/>
+
+						</p>
 						
 					</Col>
 				</Row>

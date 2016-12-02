@@ -1,6 +1,7 @@
 import { Menu, Icon,Row,Col} from 'antd';
 import React,{ Component, PropTypes } from 'react';
-import *as styles from './Navigation.css'
+import *as styles from './Navigation.css';
+import { Link } from 'react-router'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 export default class Navigation extends Component{
@@ -29,8 +30,12 @@ export default class Navigation extends Component{
             工作流程
           </Menu.Item>
           <SubMenu title={<span><Icon type="setting" /> 项目下载</span>}>
-	            <Menu.Item key="setting:1">git配置</Menu.Item>
-	            <Menu.Item key="setting:2">sourceTree配置</Menu.Item>
+	            <Menu.Item key="setting:1">
+                <Link to='/'>git配置</Link>
+              </Menu.Item>
+	            <Menu.Item key="setting:2">
+                <Link to='sourcetree'>sourceTree配置</Link>
+              </Menu.Item>
         	</SubMenu>
         	<SubMenu title={<span><Icon type="setting" /> 项目管理</span>}>
 	            <Menu.Item key="setting:1">wiki是什么</Menu.Item>

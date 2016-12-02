@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": ">1 下载项目，一般公司会有自己的github或者svn",
   "main": "index.js",
-   "scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
     "build": "webpack  --precess --color"
@@ -29,6 +29,7 @@
     "file-loader": "^0.9.0",
     "history": "^4.4.1",
     "html-webpack-plugin": "^2.24.1",
+    "isomorphic-fetch": "^2.2.1",
     "less-loader": "^2.2.3",
     "open-browser-webpack-plugin": "0.0.3",
     "react": "^15.4.1",

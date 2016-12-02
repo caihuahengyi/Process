@@ -68,7 +68,7 @@ export default class SshKey extends Component{
 						The key fingerprint is:
 						………………
 						</span>
-						<p>最后得到了两个文件：id_rsa和id_rsa.pub<br/>文件地址 ：C:\Users\Administrator.ssh </p>
+						<p>最后得到了两个文件：id_rsa和id_rsa.pub<br/>文件地址 ：C:\Users\Administrator\.ssh </p>
 					</Col>
 				</Row>
 				<Row>

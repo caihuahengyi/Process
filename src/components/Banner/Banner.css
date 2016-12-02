@@ -1,0 +1,27 @@
+.banner{
+		background: #458;
+    background-image: -webkit-linear-gradient(top, #458 0, #458 100%);
+    background-image: linear-gradient(to bottom,#458 0,#458 100%);
+    background-repeat: repeat-x;
+    position: relative;
+    padding: 88px 0;
+    color: #a3afd4;
+    font-size: 24px;
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.1)
+}
+.banner h1{
+	color:#fff;
+	font-size: 32px;
+}
+.banner p{
+	  margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}

@@ -1,0 +1,24 @@
+.tit_d{
+		font-size: 26px;
+    text-align: center;
+    color: #007cdc;
+}
+.mg20>div{
+	margin: 20px 0;
+}
+.mg20>div h3{
+	font-size: 20px;
+	line-height: 1.5;
+	padding-bottom: 10px;
+}
+.mg20>div p{
+	padding-left: 30px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.mg20>div span{
+	display: inline-block;
+	background-color: #EDEDF7;
+	padding: 10px 50px 10px 20px;
+	font-size: 16px;
+}

@@ -47,7 +47,7 @@ export default class Navigation extends Component{
               </Menu.Item>
         	</SubMenu>
           <Menu.Item key="option">
-            问题定位
+            <Link to='problem'>问题定位</Link>
           </Menu.Item>
           <Menu.Item key="some">
             Don't do things

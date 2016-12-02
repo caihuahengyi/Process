@@ -6,3 +6,5 @@ export SourceTree from  './SourceTree/SourceTree.js'
 export Process from './Process/process.js'
 export Wike from './Wilki/Wiki.js'
 export Jira from './Jira/Jira.js'
+export Problem from './Problem/Problem.js'
+
